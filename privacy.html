@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Forma & Light</title>
+  <meta name="description" content="Privacy Policy for Forma & Light. Learn how we collect, use, and protect your personal information.">
+  <link rel="canonical" href="https://www.formaandlight.com/privacy.html">
+  <meta property="og:title" content="Privacy Policy · Forma & Light">
+  <meta property="og:description" content="How Forma & Light collects, uses, and safeguards your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formaandlight.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --paper: #fbf9f6;
+      --paper-elev: #ffffff;
+      --border: #e2dbd2;
+      --border-soft: #ece6df;
+      --accent: #a76e4b;
+      --accent-hover: #8a5a3c;
+      --accent-light: #f4ede7;
+      --gray-bg: #f5f2ee;
+      --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --max-width: 1240px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      margin-top: 2.5rem;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a6e64;
+      font-weight: 500;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(251, 249, 246, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links a {
+      transition: color 0.15s;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-toggle {
+      font-size: 0.9rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--paper-elev);
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 480px;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      font-size: 1rem;
+      font-family: var(--sans);
+      background: var(--paper-elev);
+      outline: none;
+      transition: border 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- PRIVACY PAGE SPECIFIC ---------- */
+    .privacy-wrapper {
+      max-width: 820px;
+      margin: 3.5rem auto 4rem;
+    }
+
+    .privacy-header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 1.8rem;
+    }
+
+    .privacy-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-header .last-updated {
+      font-size: 0.85rem;
+      color: #8b7f74;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .privacy-header .last-updated span {
+      background: var(--accent-light);
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+
+    .privacy-content {
+      font-size: 1rem;
+      color: var(--ink-soft);
+      font-weight: 300;
+    }
+
+    .privacy-content ul {
+      margin: 0.8rem 0 1.5rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+    }
+
+    .privacy-content strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 400;
+    }
+
+    .privacy-content a:hover {
+      color: var(--accent-hover);
+    }
+
+    .privacy-card {
+      background: var(--paper-elev);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem 2.5rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 2.5rem;
+    }
+
+    .privacy-card h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .privacy-card h2:not(:first-of-type) {
+      margin-top: 2.2rem;
+    }
+
+    .privacy-card h3 {
+      font-size: 1.15rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .privacy-card p:last-child,
+    .privacy-card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-soft);
+      margin: 2.5rem 0;
+    }
+
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 1rem;
+      transition: color 0.15s;
+    }
+
+    .back-to-top:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* ---------- NEWSLETTER (mini) ---------- */
+    .newsletter-mini {
+      background: var(--gray-bg);
+      border-radius: var(--radius-lg);
+      padding: 2rem 2rem 2.2rem;
+      margin-top: 2.5rem;
+      text-align: center;
+      border: 1px solid var(--border-soft);
+    }
+
+    .newsletter-mini h4 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .newsletter-mini p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      margin-bottom: 1rem;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .newsletter-mini form {
+      display: flex;
+      gap: 0.6rem;
+      max-width: 420px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .newsletter-mini input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      background: var(--paper-elev);
+      outline: none;
+    }
+
+    .newsletter-mini input:focus {
+      border-color: var(--accent);
+    }
+
+    .newsletter-mini button {
+      background: var(--accent);
+      color: white;
+      padding: 0.7rem 1.6rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.15s;
+    }
+
+    .newsletter-mini button:hover {
+      background: var(--accent-hover);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--paper);
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: #6b625a;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-soft);
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #8b7f74;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .privacy-header h1 {
+        font-size: 2.2rem;
+      }
+      .privacy-card {
+        padding: 1.8rem 1.5rem;
+      }
+      .nav-links {
+        gap: 1.2rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .privacy-wrapper {
+        margin: 2rem auto 3rem;
+      }
+      .privacy-header h1 {
+        font-size: 1.9rem;
+      }
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 1rem; }
+    .mt-3 { margin-top: 1.8rem; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Forms Beyond Function <span>&</span></a>
+      <nav class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html" style="color: var(--accent); border-bottom-color: var(--accent);">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle">Search</button>
+      </div>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <div class="privacy-wrapper">
+      <!-- HEADER -->
+      <div class="privacy-header">
+        <span class="meta" style="display: block; margin-bottom: 0.4rem;">Legal</span>
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">
+          <span>Last updated</span> 15 January 2025
+        </div>
+      </div>
+
+      <!-- CONTENT CARD -->
+      <div class="privacy-card">
+        <p>At <strong>Forma & Light</strong> (accessible via <a href="https://www.formaandlight.com">www.formaandlight.com</a>), the privacy of our visitors is one of our main priorities. This Privacy Policy document outlines the types of information we collect and record, and how we use it.</p>
+        <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <a href="mailto:privacy@formaandlight.com">privacy@formaandlight.com</a>.</p>
+
+        <hr class="divider">
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect information in the following ways:</p>
+        <h3>Information you provide to us</h3>
+        <p>When you subscribe to our newsletter, submit a contact form, or leave a comment, we may collect:</p>
+        <ul>
+          <li>Your name and email address</li>
+          <li>Any message or content you choose to send us</li>
+          <li>Your preferences and interests (if voluntarily provided)</li>
+        </ul>
+
+        <h3>Information collected automatically</h3>
+        <p>Like most websites, we use log files and analytics. This may include:</p>
+        <ul>
+          <li>IP address (anonymized where possible)</li>
+          <li>Browser type and version</li>
+          <li>Pages visited, time and date of visit</li>
+          <li>Referring/exit pages</li>
+          <li>Device type and operating system</li>
+        </ul>
+        <p>This data is used to analyze trends, administer the site, and understand how visitors interact with our content. It is not linked to any personally identifiable information.</p>
+
+        <hr class="divider">
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information we collect in the following ways:</p>
+        <ul>
+          <li>To operate and maintain our website</li>
+          <li>To improve, personalize, and expand our content</li>
+          <li>To understand and analyze how you use our website</li>
+          <li>To develop new products, services, features, and functionality</li>
+          <li>To communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes (only if you have opted in)</li>
+          <li>To send you emails (if you subscribe to our newsletter)</li>
+          <li>To find and prevent fraud</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2>3. Cookies and Web Beacons</h2>
+        <p>Like any other website, Forma & Light uses “cookies”. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users’ experience by customizing our web page content based on visitors’ browser type and/or other information.</p>
+        <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites. For more information, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+        <hr class="divider">
+
+        <h2>4. Third-Party Privacy Policies</h2>
+        <p>Forma & Light’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.</p>
+        <p>We may use third-party services such as:</p>
+        <ul>
+          <li>Google Analytics (for traffic analysis)</li>
+          <li>Mailchimp or similar (for newsletter delivery)</li>
+          <li>Social media platforms (for sharing features)</li>
+        </ul>
+        <p>Each of these services has its own privacy policy, and we encourage you to review them.</p>
+
+        <hr class="divider">
+
+        <h2>5. GDPR Data Protection Rights</h2>
+        <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+        <ul>
+          <li><strong>The right to access</strong> – You have the right to request copies of your personal data.</li>
+          <li><strong>The right to rectification</strong> – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete information you believe is incomplete.</li>
+          <li><strong>The right to erasure</strong> – You have the right to request that we erase your personal data, under certain conditions.</li>
+          <li><strong>The right to restrict processing</strong> – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+          <li><strong>The right to object to processing</strong> – You have the right to object to our processing of your personal data, under certain conditions.</li>
+          <li><strong>The right to data portability</strong> – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        </ul>
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:privacy@formaandlight.com">privacy@formaandlight.com</a>.</p>
+
+        <hr class="divider">
+
+        <h2>6. Children's Information</h2>
+        <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+        <p>Forma & Light does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+
+        <hr class="divider">
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
+
+        <hr class="divider">
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us:</p>
+        <ul>
+          <li>By email: <a href="mailto:privacy@formaandlight.com">privacy@formaandlight.com</a></li>
+          <li>By mail: Via della Spiga 12, 20121 Milano, Italy</li>
+        </ul>
+
+        <a href="#" class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Back to top</a>
+      </div>
+
+      <!-- MINI NEWSLETTER -->
+      <div class="newsletter-mini">
+        <h4>Design intelligence, weekly.</h4>
+        <p>Join 12,000+ architects and designers reading Forma & Light.</p>
+        <form id="miniNewsletterForm">
+          <input type="email" placeholder="Your email" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="font-size: 1.6rem; margin-bottom: 1rem;">Forma <span>&</span> Light</div>
+          <p style="font-size: 0.85rem; color: #6b625a; max-width: 300px;">An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Forma & Light. All rights reserved.</span>
+        <span>Made with care for design readers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA MARKUP (PrivacyPolicy) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy · Forma & Light",
+    "description": "Privacy Policy for Forma & Light. Learn how we collect, use, and protect your personal information.",
+    "url": "https://www.formaandlight.com/privacy.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Forma & Light",
+      "url": "https://www.formaandlight.com"
+    }
+  }
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // Search toggle
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // Mini newsletter form
+      const miniForm = document.getElementById('miniNewsletterForm');
+      if (miniForm) {
+        miniForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for subscribing. (Demo only)');
+          this.reset();
+        });
+      }
+
+      // Smooth scroll for internal anchors
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

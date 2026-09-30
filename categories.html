@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Forma & Light · Interior Design & Architecture Journal</title>
+  <meta name="description" content="Browse all categories on Forma & Light — interior design, architecture, materials, lighting, space planning, sustainable design, and modern living.">
+  <link rel="canonical" href="https://www.formaandlight.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Forma & Light">
+  <meta property="og:description" content="Browse all categories on Forma & Light — interior design, architecture, materials, lighting, space planning, and modern living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formaandlight.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & base style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --paper: #fbf9f6;
+      --paper-elev: #ffffff;
+      --border: #e2dbd2;
+      --border-soft: #ece6df;
+      --accent: #a76e4b;
+      --accent-hover: #8a5a3c;
+      --accent-light: #f4ede7;
+      --gray-bg: #f5f2ee;
+      --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --max-width: 1240px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a6e64;
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(251, 249, 246, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      transition: color 0.15s;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-toggle {
+      font-size: 0.9rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--paper-elev);
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 480px;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      font-size: 1rem;
+      font-family: var(--sans);
+      background: var(--paper-elev);
+      outline: none;
+      transition: border 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- CATEGORY PAGE ---------- */
+    .categories-hero {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .categories-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .categories-hero p {
+      font-size: 1.2rem;
+      color: var(--ink-soft);
+      max-width: 680px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 900px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .category-card {
+      background: var(--paper-elev);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .category-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .category-card-img {
+      aspect-ratio: 16 / 9;
+      background: var(--gray-bg);
+      overflow: hidden;
+    }
+
+    .category-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .category-card:hover .category-card-img img {
+      transform: scale(1.03);
+    }
+
+    .category-card-body {
+      padding: 1.5rem 1.5rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .category-card-body h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .category-card-body h3 a:hover {
+      color: var(--accent);
+    }
+
+    .category-card-body p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      margin-bottom: 1.2rem;
+      flex: 1;
+      line-height: 1.6;
+    }
+
+    .category-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #8b7f74;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 0.9rem;
+      margin-top: auto;
+    }
+
+    .article-count {
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.15rem 0.7rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .sidebar-widget {
+      background: var(--paper-elev);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.6rem;
+    }
+
+    .sidebar-list {
+      list-style: none;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .sidebar-list li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .sidebar-list a {
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .sidebar-list a:hover {
+      color: var(--accent);
+    }
+
+    .sidebar-list .meta {
+      font-size: 0.7rem;
+    }
+
+    .author-box {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .author-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gray-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--accent);
+      font-weight: 500;
+      flex-shrink: 0;
+      border: 1px solid var(--border-soft);
+    }
+
+    .author-info p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .author-info strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .topic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .topic-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--paper-elev);
+      color: var(--ink-soft);
+      transition: all 0.15s;
+    }
+
+    .topic-tag:hover {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 3rem 0;
+      margin: 3rem 0 0;
+      border-radius: var(--radius-lg);
+    }
+
+    .newsletter .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .newsletter h3 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      color: var(--paper);
+    }
+
+    .newsletter p {
+      color: #b8aaa0;
+      max-width: 500px;
+      margin-bottom: 1.2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.8rem 1.2rem;
+      border-radius: 40px;
+      border: 1px solid #4a403a;
+      background: #2a2420;
+      color: var(--paper);
+      font-family: var(--sans);
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder {
+      color: #7a6e64;
+    }
+
+    .newsletter-form button {
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+
+    .newsletter-form button:hover {
+      background: var(--accent-hover);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--paper);
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: #6b625a;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-soft);
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #8b7f74;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-title h2 {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+
+    .section-title a {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mt-4 {
+      margin-top: 2.5rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Forma <span>&</span> Light</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html" class="active">Categories</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle">Search</button>
+      </div>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search categories, topics, materials…" aria-label="Search categories">
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- CATEGORIES HERO -->
+    <div class="categories-hero">
+      <span class="category-tag">Browse</span>
+      <h1>Categories</h1>
+      <p>Explore our editorial pillars — from architectural theory to material innovation, lighting design to spatial planning. Every article is independently written and carefully curated.</p>
+    </div>
+
+    <!-- EDITORIAL GRID: CATEGORY CARDS + SIDEBAR -->
+    <div class="editorial-grid">
+      <!-- LEFT COLUMN: CATEGORY CARDS -->
+      <div class="articles-column" id="articlesColumn">
+        <div class="category-grid" id="categoryGrid">
+          <!-- 1. Interior Design -->
+          <div class="category-card" data-category="interior design">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop" alt="Interior design living space with modern furniture" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Interior Design</a></h3>
+              <p>Residential and commercial interiors, styling, colour theory, furniture selection, and the details that make a room feel complete.</p>
+              <div class="category-meta">
+                <span class="article-count">24 articles</span>
+                <span>Updated weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Architecture -->
+          <div class="category-card" data-category="architecture">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop" alt="Modern architecture building facade" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Architecture</a></h3>
+              <p>Building typologies, urbanism, adaptive reuse, and the intersection of structure and daily life — from small homes to public spaces.</p>
+              <div class="category-meta">
+                <span class="article-count">18 articles</span>
+                <span>Updated weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Materials -->
+          <div class="category-card" data-category="materials">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?q=80&w=800&auto=format&fit=crop" alt="Natural material samples stone wood" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Materials</a></h3>
+              <p>Stone, timber, concrete, glass, and emerging sustainable finishes. How material choices shape atmosphere, durability, and ecological impact.</p>
+              <div class="category-meta">
+                <span class="article-count">15 articles</span>
+                <span>Updated bi-weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Lighting -->
+          <div class="category-card" data-category="lighting">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=800&auto=format&fit=crop" alt="Architectural lighting detail" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Lighting</a></h3>
+              <p>Natural and artificial light, fixtures, circadian design, and how illumination transforms the experience of space and material.</p>
+              <div class="category-meta">
+                <span class="article-count">12 articles</span>
+                <span>Updated monthly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Space Planning -->
+          <div class="category-card" data-category="space planning">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Architectural floor plan drawing" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Space Planning</a></h3>
+              <p>Layout strategies, circulation, broken-plan living, and the art of making rooms work for real life — not just for photographs.</p>
+              <div class="category-meta">
+                <span class="article-count">10 articles</span>
+                <span>Updated monthly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Sustainable Design -->
+          <div class="category-card" data-category="sustainable design">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop" alt="Green sustainable building with plants" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Sustainable Design</a></h3>
+              <p>Passive strategies, low-carbon materials, energy efficiency, and the growing responsibility of designers to build with the planet in mind.</p>
+              <div class="category-meta">
+                <span class="article-count">9 articles</span>
+                <span>Updated monthly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Kitchen & Bath -->
+          <div class="category-card" data-category="kitchen & bath">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=800&auto=format&fit=crop" alt="Modern kitchen with island" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Kitchen & Bath</a></h3>
+              <p>Worktop materials, cabinetry, fixtures, and the functional poetry of the most-used rooms in the home.</p>
+              <div class="category-meta">
+                <span class="article-count">14 articles</span>
+                <span>Updated bi-weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Furniture & Objects -->
+          <div class="category-card" data-category="furniture & objects">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=800&auto=format&fit=crop" alt="Designer chair and furniture detail" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Furniture & Objects</a></h3>
+              <p>Iconic designs, craft traditions, and the small objects that carry meaning — from chairs to ceramics to lighting fixtures.</p>
+              <div class="category-meta">
+                <span class="article-count">11 articles</span>
+                <span>Updated monthly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Modern Living -->
+          <div class="category-card" data-category="modern living">
+            <div class="category-card-img">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop" alt="Minimal modern living room" loading="lazy">
+            </div>
+            <div class="category-card-body">
+              <h3><a href="#">Modern Living</a></h3>
+              <p>How we live now — work-from-home, small-space strategies, slow living, and the rituals that shape our domestic environments.</p>
+              <div class="category-meta">
+                <span class="article-count">16 articles</span>
+                <span>Updated weekly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter">
+          <div class="container">
+            <h3>Design intelligence, weekly.</h3>
+            <p>Join 12,000+ architects, designers and curious homeowners reading Forma & Light.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Your email address" required aria-label="Email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h4>About the Editor</h4>
+          <div class="author-box">
+            <div class="author-avatar">EM</div>
+            <div class="author-info">
+              <strong>Elena Marchetti</strong>
+              <p>Architect and design writer based in Milan. Elena founded Forma & Light to explore the intersection of material culture, light, and daily life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Popular This Month</h4>
+          <ul class="sidebar-list">
+            <li>
+              <a href="#">10 Common Interior Design Mistakes (and How to Avoid Them)</a>
+              <span class="meta">8 min read</span>
+            </li>
+            <li>
+              <a href="#">The Return of the Broken-Plan Living Room</a>
+              <span class="meta">6 min read</span>
+            </li>
+            <li>
+              <a href="#">How to Read a Floor Plan Like an Architect</a>
+              <span class="meta">9 min read</span>
+            </li>
+            <li>
+              <a href="#">Stone vs. Porcelain: A Kitchen Worktop Guide</a>
+              <span class="meta">7 min read</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Browse by Topic</h4>
+          <div class="topic-tags">
+            <a href="#" class="topic-tag">Residential Architecture</a>
+            <a href="#" class="topic-tag">Modern Interiors</a>
+            <a href="#" class="topic-tag">Space Planning</a>
+            <a href="#" class="topic-tag">Sustainable Design</a>
+            <a href="#" class="topic-tag">Kitchen & Bath</a>
+            <a href="#" class="topic-tag">Furniture & Objects</a>
+            <a href="#" class="topic-tag">Lighting</a>
+            <a href="#" class="topic-tag">Materials</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="font-size: 1.6rem; margin-bottom: 1rem;">Forma <span>&</span> Light</div>
+          <p style="font-size: 0.85rem; color: #6b625a; max-width: 300px;">An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Forma & Light. All rights reserved.</span>
+        <span>Made with care for design readers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories · Forma & Light",
+    "description": "Browse all categories on Forma & Light — interior design, architecture, materials, lighting, space planning, and modern living.",
+    "url": "https://www.formaandlight.com/categories.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Forma & Light"
+    }
+  }
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // Search toggle
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // Search filtering for category cards
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('.category-card');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          const category = (card.dataset.category || '').toLowerCase();
+          if (text.includes(query) || category.includes(query)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+
+      // Newsletter form (prevent actual submission)
+      const newsletterForm = document.getElementById('newsletterForm');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for subscribing. (This is a demo.)');
+          this.reset();
+        });
+      }
+
+      // Smooth scroll for internal links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

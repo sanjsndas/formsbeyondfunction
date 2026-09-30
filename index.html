@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma & Light · Interior Design & Architecture Journal</title>
+  <meta name="description" content="Independent editorial on interior design, architecture, materials, space planning, lighting and modern living. Long-form guides and practical knowledge for design-conscious readers.">
+  <link rel="canonical" href="https://www.formaandlight.com/index.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Forma & Light · Interior Design & Architecture Journal">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, materials, space planning, lighting and modern living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formaandlight.com/index.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts & base style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --paper: #fbf9f6;
+      --paper-elev: #ffffff;
+      --border: #e2dbd2;
+      --border-soft: #ece6df;
+      --accent: #a76e4b;
+      --accent-hover: #8a5a3c;
+      --accent-light: #f4ede7;
+      --gray-bg: #f5f2ee;
+      --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.04);
+      --max-width: 1240px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a6e64;
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background-color: rgba(251, 249, 246, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      transition: color 0.15s;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-toggle {
+      font-size: 0.9rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--paper-elev);
+      transition: all 0.15s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 480px;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      font-size: 1rem;
+      font-family: var(--sans);
+      background: var(--paper-elev);
+      outline: none;
+      transition: border 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- CATEGORY FILTERS ---------- */
+    .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .filter-btn {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.4rem 1.1rem;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      background: var(--paper-elev);
+      color: var(--ink-soft);
+      transition: all 0.15s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+
+    /* ---------- ARTICLE CARDS ---------- */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--paper-elev);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-img {
+      aspect-ratio: 16 / 10;
+      background: var(--gray-bg);
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .card:hover .card-img img {
+      transform: scale(1.02);
+    }
+
+    .card-body {
+      padding: 1.5rem 1.5rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-body h3 {
+      font-size: 1.3rem;
+      margin: 0.3rem 0 0.6rem;
+      line-height: 1.3;
+    }
+
+    .card-body h3 a:hover {
+      color: var(--accent);
+    }
+
+    .card-excerpt {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #8b7f74;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .sidebar-widget {
+      background: var(--paper-elev);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.6rem;
+    }
+
+    .sidebar-list {
+      list-style: none;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .sidebar-list li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .sidebar-list a {
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .sidebar-list a:hover {
+      color: var(--accent);
+    }
+
+    .sidebar-list .meta {
+      font-size: 0.7rem;
+    }
+
+    .author-box {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .author-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gray-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--accent);
+      font-weight: 500;
+      flex-shrink: 0;
+      border: 1px solid var(--border-soft);
+    }
+
+    .author-info p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .author-info strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* ---------- LONG-FORM ARTICLE ---------- */
+    .article-long {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    .article-long h2 {
+      margin-top: 2rem;
+    }
+
+    .article-long h3 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .article-long p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+    }
+
+    .article-long ul, .article-long ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .article-long li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-long img {
+      border-radius: var(--radius-md);
+      margin: 2rem 0;
+      border: 1px solid var(--border-soft);
+    }
+
+    .article-long blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq-item {
+      border-bottom: 1px solid var(--border-soft);
+      padding: 1.2rem 0;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.4rem;
+      color: var(--accent);
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-top: 0.8rem;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 3rem 0;
+      margin: 3rem 0;
+      border-radius: var(--radius-lg);
+    }
+
+    .newsletter .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .newsletter h3 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      color: var(--paper);
+    }
+
+    .newsletter p {
+      color: #b8aaa0;
+      max-width: 500px;
+      margin-bottom: 1.2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.8rem 1.2rem;
+      border-radius: 40px;
+      border: 1px solid #4a403a;
+      background: #2a2420;
+      color: var(--paper);
+      font-family: var(--sans);
+      outline: none;
+    }
+
+    .newsletter-form input::placeholder {
+      color: #7a6e64;
+    }
+
+    .newsletter-form button {
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+
+    .newsletter-form button:hover {
+      background: var(--accent-hover);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--paper);
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: #6b625a;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-soft);
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #8b7f74;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-title h2 {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+
+    .section-title a {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mt-4 {
+      margin-top: 2.5rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Forms Beyond Function <span>&</span></a>
+      <nav class="nav-links">
+         <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms Of Privacy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="cookies.html">Cookies Policy</a></li> 
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle">Search</button>
+      </div>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <!-- CATEGORY FILTERS -->
+    <div class="category-filters" id="categoryFilters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="interior">Interior Design</button>
+      <button class="filter-btn" data-category="architecture">Architecture</button>
+      <button class="filter-btn" data-category="materials">Materials</button>
+      <button class="filter-btn" data-category="lighting">Lighting</button>
+      <button class="filter-btn" data-category="space">Space Planning</button>
+      <button class="filter-btn" data-category="sustainable">Sustainable</button>
+    </div>
+
+    <!-- EDITORIAL GRID: ARTICLES + SIDEBAR -->
+    <div class="editorial-grid">
+      <!-- LEFT COLUMN: ARTICLES -->
+      <div class="articles-column" id="articlesColumn">
+        <!-- FEATURED ARTICLES -->
+        <div class="featured-grid" id="featuredGrid">
+          <article class="card" data-category="architecture">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Modern concrete and glass house with cantilevered volumes among trees">
+            </div>
+            <div class="card-body">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">The Quiet Power of Concrete in Residential Architecture</a></h3>
+              <p class="card-excerpt">How board-formed concrete, thermal mass and minimalist detailing create homes that are both raw and refined.</p>
+              <div class="card-footer">
+                <span>Mar 12, 2025</span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="interior">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Warm minimalist living room with linen sofa, oak floor and sculptural lamp">
+            </div>
+            <div class="card-body">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">Warm Minimalism: 7 Principles for a Calm, Layered Home</a></h3>
+              <p class="card-excerpt">Beyond stark white boxes—how to combine texture, tone and light to create interiors that feel lived-in yet composed.</p>
+              <div class="card-footer">
+                <span>Mar 08, 2025</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="lighting">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=800&auto=format&fit=crop" alt="Architectural lighting detail with recessed LED strip and pendant globe">
+            </div>
+            <div class="card-body">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">Layered Lighting: A Room-by-Room Guide to Better Illumination</a></h3>
+              <p class="card-excerpt">Ambient, task, accent and decorative—how to plan a lighting scheme that adapts from morning to night.</p>
+              <div class="card-footer">
+                <span>Mar 05, 2025</span>
+                <span>10 min read</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="materials">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop" alt="Close-up of natural stone and wood material samples on a table">
+            </div>
+            <div class="card-body">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Material Honesty: Choosing Finishes That Age Gracefully</a></h3>
+              <p class="card-excerpt">Patina, wear and character—why natural materials like stone, timber and lime plaster outperform synthetic alternatives over time.</p>
+              <div class="card-footer">
+                <span>Mar 01, 2025</span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- LATEST ARTICLES SECTION -->
+        <div class="section-title">
+          <h2>Latest Articles</h2>
+          <a href="#">View all</a>
+        </div>
+
+        <div id="latestArticles">
+          <!-- Article 1 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="space">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Space Planning</span>
+              <h3><a href="#">Small Space, Big Ideas: 12 Spatial Strategies for Compact Homes</a></h3>
+              <p class="card-excerpt">From sightlines and double-duty furniture to vertical storage and borrowed light—practical ways to make 50 m² feel generous.</p>
+              <div class="card-footer">
+                <span>Feb 26, 2025</span>
+                <span>9 min read</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article 2 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="interior">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Interior Design</span>
+              <h3><a href="#">The Art of the Kitchen Island: Function, Flow and Social Connection</a></h3>
+              <p class="card-excerpt">More than a prep surface—how to size, position and detail an island that becomes the heart of the home.</p>
+              <div class="card-footer">
+                <span>Feb 22, 2025</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article 3 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="sustainable">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Sustainable Design</span>
+              <h3><a href="#">Passive Design in Practice: Orientation, Shading and Thermal Mass</a></h3>
+              <p class="card-excerpt">How to reduce energy demand through thoughtful architectural moves—before adding technology.</p>
+              <div class="card-footer">
+                <span>Feb 18, 2025</span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article 4 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="architecture">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Architecture</span>
+              <h3><a href="#">Facades That Breathe: Exploring Modern Envelope Design</a></h3>
+              <p class="card-excerpt">From perforated screens to double-skin glass—how contemporary facades balance privacy, light and energy.</p>
+              <div class="card-footer">
+                <span>Feb 14, 2025</span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article 5 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="lighting">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Lighting</span>
+              <h3><a href="#">Color Temperature Demystified: Warm, Neutral and Cool Light</a></h3>
+              <p class="card-excerpt">Why 2700K feels cozy and 4000K feels clinical—and how to specify the right Kelvin for every room.</p>
+              <div class="card-footer">
+                <span>Feb 10, 2025</span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </article>
+          <!-- Article 6 -->
+          <article class="card" style="margin-bottom: 1.8rem;" data-category="materials">
+            <div class="card-body" style="padding: 1.8rem;">
+              <span class="category-tag">Materials</span>
+              <h3><a href="#">Lime Plaster vs. Gypsum: Which Wall Finish Is Right for You?</a></h3>
+              <p class="card-excerpt">Breathability, texture and patina—a practical comparison for renovators and self-builders.</p>
+              <div class="card-footer">
+                <span>Feb 06, 2025</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- LONG-FORM FEATURE ARTICLE -->
+        <div class="article-long mt-4" id="featuredLong">
+          <span class="category-tag">Design Principles</span>
+          <h1 style="font-size: 2.4rem; margin: 0.5rem 0 1rem;">Forms Beyond Function: The Poetics of Everyday Spaces</h1>
+          <p class="meta" style="margin-bottom: 1.5rem;">By Elena Marchetti · March 15, 2025 · 12 min read</p>
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Sunlit interior with travertine floor, linen curtains and a single sculptural chair">
+          <p>We often speak of architecture and interior design in terms of solutions: solving the problem of shelter, of circulation, of storage. But the spaces that truly move us go beyond problem-solving. They engage our senses, evoke memory, and frame daily life with a quiet intentionality. This is the realm of form beyond function—where a stair becomes a place to pause, a window becomes a painting, and a wall becomes a canvas for light.</p>
+          <h2>The Sensory Threshold</h2>
+          <p>Every room has a threshold—not just the physical door, but the moment your body registers a shift in atmosphere. The best designers choreograph this threshold carefully. A change in floor material, a drop in ceiling height, a shift from cool to warm light. These are not decorative gestures; they are spatial cues that prepare us for what comes next. In residential architecture, this might mean a compressed entry corridor that opens into a double-height living space, or a transition from oak floorboards to soft wool carpet as you enter a bedroom.</p>
+          <p>At Forma & Light, we believe these thresholds are where architecture becomes experiential. They cost little but reward immensely.</p>
+          <h2>Material as Memory</h2>
+          <p>Natural materials carry time within them. A limestone floor wears unevenly, recording the paths we walk most often. A timber beam darkens with age. Brass tarnishes. These changes are not flaws; they are narratives. When we specify materials, we are choosing how a space will tell its story over years and decades.</p>
+          <blockquote>“The best interiors are not those that look new forever, but those that grow more beautiful with use.”</blockquote>
+          <p>This philosophy extends to the smallest details: a hand-thrown ceramic tile, a roughly plastered wall, a worn leather handle. These are the elements that make a house feel like a home, not a showroom.</p>
+          <h2>Light as Material</h2>
+          <p>Light is the most underrated building material. It shapes volume, reveals texture, and changes colour throughout the day. A room with a north-facing window will always feel cooler and more diffuse; a west-facing room will glow with amber at sunset. Designing with light means understanding these qualities and amplifying them.</p>
+          <p>Consider the difference between a room lit by a single overhead fixture and one lit by three layers: a soft ambient wash, a focused task light, and a low decorative glow. The latter feels alive, adaptable, human. We explore this in our <a href="#lighting" style="color: var(--accent); text-decoration: underline;">lighting guides</a>.</p>
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop" alt="Detail of a sculptural pendant light casting warm shadows on a plaster wall">
+          <h2>Furniture as Architecture</h2>
+          <p>In small spaces, furniture must do more than sit pretty. Built-in seating, storage walls, and multi-functional pieces become architectural elements in their own right. A well-designed bench that doubles as a bookshelf and a room divider is not just furniture—it is spatial planning.</p>
+          <p>When selecting furniture, we encourage readers to think in plan and section, not just elevation. How does a piece affect circulation? Does it block sightlines? Does it create a cozy nook or a thoroughfare? These questions lead to better, more liveable homes.</p>
+          <h2>The Future of Home</h2>
+          <p>As our lives become more digital, the physical home becomes a sanctuary. The demand for tactile, honest materials and flexible, light-filled spaces will only grow. We see a future where interiors are designed not for Instagram, but for daily ritual: morning coffee, evening reading, slow cooking, deep sleep.</p>
+          <p>This is the quiet revolution in design—a return to essentials, to proportion, to light, to touch. It is not about style; it is about substance.</p>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="mt-4" id="faqSection">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What is the difference between interior design and interior architecture?</div>
+            <div class="faq-answer">Interior design focuses on the aesthetic and functional improvement of interior spaces, including furniture, finishes, and colour. Interior architecture goes further, dealing with structural changes, spatial planning, and building systems while preserving the architectural integrity of the space.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How do I choose the right lighting for a small living room?</div>
+            <div class="faq-answer">Use layered lighting: a dimmable ambient ceiling light, a floor lamp for reading, and a small table lamp for atmosphere. Avoid single bright overhead fixtures. Warm colour temperatures (2700K–3000K) make small spaces feel cozy rather than cramped.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Are natural materials always more sustainable?</div>
+            <div class="faq-answer">Not automatically, but they often have lower embodied energy and biodegrade more easily. Sourcing matters: locally quarried stone or FSC-certified timber is far better than materials transported long distances. Durability is also key—a material that lasts 50 years is inherently more sustainable than one replaced every 5.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How can I make a rental kitchen feel more designed?</div>
+            <div class="faq-answer">Focus on non-permanent changes: removable adhesive tiles, a freestanding island, better task lighting under cabinets, open shelving, and unified hardware. Swapping curtains and adding a runner can also transform the feel without violating a lease.</div>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter">
+          <div class="container">
+            <h3>Design intelligence, weekly.</h3>
+            <p>Join 12,000+ architects, designers and curious homeowners reading Forma & Light.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Your email address" required aria-label="Email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h4>About the Editor</h4>
+          <div class="author-box">
+            <div class="author-avatar">EM</div>
+            <div class="author-info">
+              <strong>Elena Marchetti</strong>
+              <p>Architect and design writer based in Milan. Elena founded Forma & Light to explore the intersection of material culture, light, and daily life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Popular This Month</h4>
+          <ul class="sidebar-list">
+            <li>
+              <a href="#">10 Common Interior Design Mistakes (and How to Avoid Them)</a>
+              <span class="meta">8 min read</span>
+            </li>
+            <li>
+              <a href="#">The Return of the Broken-Plan Living Room</a>
+              <span class="meta">6 min read</span>
+            </li>
+            <li>
+              <a href="#">How to Read a Floor Plan Like an Architect</a>
+              <span class="meta">9 min read</span>
+            </li>
+            <li>
+              <a href="#">Stone vs. Porcelain: A Kitchen Worktop Guide</a>
+              <span class="meta">7 min read</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Browse by Topic</h4>
+          <ul class="sidebar-list" style="columns: 1;">
+            <li><a href="#">Residential Architecture</a></li>
+            <li><a href="#">Modern Interiors</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Sustainable Design</a></li>
+            <li><a href="#">Kitchen & Bath</a></li>
+            <li><a href="#">Furniture & Objects</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="font-size: 1.6rem; margin-bottom: 1rem;">Forma <span>&</span> Light</div>
+          <p style="font-size: 0.85rem; color: #6b625a; max-width: 300px;">An independent editorial publication exploring interior design, architecture, and the art of living well.</p>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Forma & Light. All rights reserved.</span>
+        <span>Made with care for design readers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Forma & Light",
+    "description": "Independent editorial on interior design, architecture, materials, space planning, lighting and modern living.",
+    "url": "https://www.formaandlight.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Forma & Light"
+    }
+  }
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    (function() {
+      // Search toggle
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // Search filtering
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+
+      // Category filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update active class
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const category = this.dataset.category;
+          const cards = document.querySelectorAll('.card');
+          cards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Also filter the long article? We keep it visible.
+        });
+      });
+
+      // FAQ toggle
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      });
+
+      // Newsletter form (prevent actual submission)
+      const newsletterForm = document.getElementById('newsletterForm');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for subscribing. (This is a demo.)');
+          this.reset();
+        });
+      }
+
+      // Smooth scroll for internal links (if any)
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
